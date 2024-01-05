@@ -1,0 +1,70 @@
+/* Hide the dropdown content by default */
+.hidden {
+  display: none;
+}
+
+#teams-dropdown i {
+  margin-right: 5px;
+}
+
+#teams-dropdown-content {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 8;
+  padding: 10px;
+  min-width: 200px;
+  border-radius: 10px;
+}
+
+#teams-dropdown-content a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+#create-team-link {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+}
+
+#teams-dropdown-content a:hover {
+  background-color: #f5f5f5;
+  color: #000;
+}
+
+.divider {
+  margin: 5px 0;
+  border-top: 1px solid #ccc;
+}
+
+.teams-section h4 {
+  padding: 0;
+  margin: 0;
+  color: #333;
+}
+
+
+.teams-section {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.dropdown {
+  position: absolute;
+  left: 200px;
+  margin: 20px;
+  transition: 0.3s ease;
+  transform: rotate(90deg);
+}
+
+.dropdown-content hidden {
+  background: #262627;
+  display: none;
+}

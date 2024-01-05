@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="teams.css">
+    <title>RANGE-Backup</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <section class="sidebar">
+      <a href="#" class="logo">
+        <i class="fa fa-asl-interpreting"></i>
+        <span class="text">RANGE</span>
+      </a>
+
+      <ul class="side-menu top">
+        <li>
+          <a href="./dashboard.html" class="nav-link">
+            <i class="fa-solid fa-chart-bar"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="./task.html" class="nav-link">
+            <i class="fa-solid fa-list-check"></i>
+            <span class="text">Tasks</span>
+          </a>
+        </li>
+        <li>
+          <a href="./project.html" class="nav-link">
+            <i class="fas fa-chart-simple"></i>
+            <span class="text">Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="./messages.html" class="nav-link">
+            <i class="fas fa-message"></i>
+            <span class="text">Message</span>
+          </a>
+        </li>
+        <li>
+          <li id="teams-dropdown" class="active">
+            <a href="./teams.html" class="nav-link">
+              <i class="fa-solid fa-users"></i>
+              <span class="text">Teams</span>
+              <i class="fas fa-angle-right dropdown"></i>
+            </a>
+            <div id="teams-dropdown-content" class="dropdown-content hidden">
+              <div class="create-team-section">
+                <a href="#" id="create-team-link">Create New Team</a>
+              </div>
+              <div id="teams-section" class="teams-section">
+                <div class="divider"></div>
+                <h4>Your Teams</h4>
+              </div>
+            </div>  
+          </li>
+        </li>
+      </ul>
+
+      <ul class="side-menu">
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="logout">
+            <i class="fas fa-right-from-bracket"></i>
+            <span class="text">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="content">
+      <nav>
+        <i class="fas fa-bars menu-btn"></i>
+        <a href="#" class="nav-link"> Menu</a>
+        <form action="#">
+          <div class="form-input">
+            <input type="search" placeholder="search..." />
+            <button class="search-btn">
+              <i class="fas fa-search search-icon"></i>
+            </button>
+          </div>
+        </form>
+
+        <input type="checkbox" hidden id="switch-mode" />
+        <label for="switch-mode" class="switch-mode"></label>
+
+        <a href="#" class="notification">
+          <i class="fas fa-bell"></i>
+          <span class="num">4</span>
+        </a>
+
+        <a href="#" class="notification">
+          <i class="fa-solid fa-comments"></i>
+        </a>
+
+        <a href="#" class="profile">
+          <img src="profile.png" alt="" />
+        </a>
+      </nav>
+
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Teams Workspace</h1>
+
+          </div>
+        </div>
+
+        <div class="box-info">
+          <li>
+            <i class="fa-solid fa-users"></i>
+            <span class="text">
+              <h3>2</h3>
+              <p>Pending Teams</p>
+            </span>
+          </li>
+          <li>
+            <i class="fa fa-list-alt" aria-hidden="true"></i>
+            <span class="text">
+              <h3>3</h3>
+              <p>Tasks ToDo</p>
+            </span>
+          </li>
+          <li>
+            <i class="fas fa-calendar-check"></i>
+            <span class="text">
+              <h3>5</h3>
+              <p>Projects Completed</p>
+            </span>
+          </li>
+        </div>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Projects</h3>
+              <i class="fas fa-plus"></i>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Project Name</th>
+                  <th>Due Date</th>
+                  <th>Status</th>
+                  <th>Priority</th>
+                  <th>Assign</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>Project 1</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status pending">Pending</span></td>
+                  <td><span class="priority high">High</span></td>
+                  <td><span><span class="assignee">TechFuse</span></td>
+                  <td><span><i class="fa fa-times"></i> <i class="fa fa-pencil-square" aria-hidden="true"></i></span></td>
+                  </span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Project 2</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status pending">Pending</span></td>
+                  <td><span class="priority medium">Medium</span></td>
+                  <td><span class="assignee">CodeGen</span></td>
+                  <td><span><i class="fa fa-times"></i> <i class="fa fa-pencil-square" aria-hidden="true"></i></span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Project 3</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status process">Process</span></td>
+                  <td><span class="priority low">Low</span></td>
+                  <td><span class="assignee">WebPulse</span></td>
+                  <td><span><i class="fa fa-times"></i> <i class="fa fa-pencil-square" aria-hidden="true"></i></span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Project 4</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status process">Process</span></td>
+                  <td><span class="priority medium">Medium</span></td>
+                  <td><span class="assignee">LoopNet</span></td>
+                  <td><span><i class="fa fa-times"></i> <i class="fa fa-pencil-square" aria-hidden="true"></i></span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Project 5</p>
+                  </td>
+                  <td>07-05-2023</td>
+                  <td><span class="status complete">Complete</span></td>
+                  <td><span class="priority high">High</span></td>
+                  <td><span class="assignee">ScanPro</span></td>
+                  <td><span><i class="fa fa-times"></i> <i class="fa fa-pencil-square" aria-hidden="true"></i></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="todo">
+            <div class="head">
+              <h3>Activity</h3>
+            </div>
+
+            <ul class="todo-list">
+              <li class="not-completed">
+                <p>Azuma Keygen<br><span>uploaded a document</span></p>
+              </li>
+              <li class="completed">
+                <p>Dev Engineer<br><span>left a comment on Project 1</span></p>
+              </li>
+              <li class="process">
+                <p>Git Push<br><span>uploaded a document</span></p>
+              </li>
+              <li class="completed">
+                <p>Stack Underflow<br><span>completed Project 3</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script src="teams.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>
