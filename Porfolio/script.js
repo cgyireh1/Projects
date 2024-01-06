@@ -20,18 +20,6 @@ pageTurnBtn.forEach((el, index) => {
   }
 })
 
-//read more button
-
-document.addEventListener('DOMContentLoaded', function() {
-  var readMoreButtons = document.querySelectorAll('.read-more-button');
-  readMoreButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-      var description = this.parentNode.querySelector('.description');
-      description.classList.toggle('expanded');
-    });
-  });
-});
-
 
 //Contact me button when clicked
 
